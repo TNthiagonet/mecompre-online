@@ -1,0 +1,57 @@
+/* MobileMenu.css */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+.mobile-menu {
+  display: none;
+  background-image: linear-gradient(to bottom, 
+  #210032de,
+  #310043de,
+  #420054de,
+  #520065de,
+  #620076de,
+  #620076de,
+  #520065de,
+  #420054de,
+  #310043de,
+  #210032de
+);
+
+
+  padding: 10px;
+  position: fixed;
+  top: 80px;
+  right: 0px;
+  z-index: 3;
+  text-align: center;
+  width: 100%;
+}
+
+.mobile-menu.show {
+  display: block;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul li {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.mobile-menu ul li a {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 30px;
+  color: #f9e1ff;
+  font-size: 30px;
+  text-decoration: none;
+  display: block;
+}
+
+.mobile-menu ul li a:hover{
+  transform: scale(1.1); 
+}

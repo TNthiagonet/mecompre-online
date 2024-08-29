@@ -1,0 +1,32 @@
+aside.side-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+aside.left-menu li {
+  list-style: none;
+  margin-top: 50px;
+  margin-left: -27px;
+  margin-right: 1px;
+  display: flex;
+}
+
+aside.left-menu {
+  background-color: #4caf4f00;
+  left: 0;
+  width: 81px;
+}
+
+aside.right-menu {
+  background-color: #2195f300;
+  right: 0;
+  width: 81px;
+}
+
+@media (max-width: 768px) {
+  aside.side-menu {
+    display: none; /* Esconde os menus laterais em telas menores */
+  }
+}

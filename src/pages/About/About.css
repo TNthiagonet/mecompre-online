@@ -1,0 +1,72 @@
+/* About.css */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+/* Estilo principal da seção "Sobre" */
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px 20px;
+  margin-top: -50px;
+  width: 100%; /* Garante que a largura seja 100% */
+  box-sizing: border-box; /* Mantém o padding dentro do elemento */
+  overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+}
+
+/* Estilo para o conteúdo da seção "Sobre" */
+.about-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: right;
+}
+
+/* Estilo para o título da seção "Sobre" */
+.about-title {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f9e1ff;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712);
+}
+
+/* Estilo para a descrição principal */
+.about-description, .about-description2 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f9e1ff;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712);
+}
+
+/* Estilo para o contêiner da animação */
+.about-animation-container {
+  max-width: 35vw;
+  width: 100%;
+  height: auto;
+}
+
+/* Media queries para dispositivos menores */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 20px; /* Reduz o padding para dispositivos menores */
+  }
+
+  .about-animation-container {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .about-content {
+    text-align: left;
+    margin-right: 0; /* Remova o margin-right para dispositivos menores */
+  }
+
+  .about-title, .about-description, .about-description2 {
+    text-align: left;
+  }
+}

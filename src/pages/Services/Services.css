@@ -1,0 +1,61 @@
+/* Services.css */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+/* Estilo principal da seção "Serviços" */
+#services {
+  padding: 10px 20px; /* Define o preenchimento da seção */
+}
+
+/* Estilo do cabeçalho da seção "Serviços" */
+.services-header {
+  text-align: center; /* Alinha o texto ao centro */
+
+}
+
+.services-header h1 {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 100px;
+  font-size: 3rem; /* Aumenta o tamanho da fonte */
+  color: #f9e1ff; /* Define a cor do texto */
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.493); /* Adiciona sombra leve */
+}
+
+.services-header p {
+  font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+  color: #f9e1ff; /* Define a cor do texto */
+  margin-bottom: 20px; /* Define a margem inferior */
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.493); /* Adiciona sombra leve */
+}
+
+.services-header-p {
+  text-align: center; /* Centraliza o texto */
+  font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+  color: #f9e1ff; /* Define a cor do texto */
+  margin-bottom: 20px; /* Define a margem inferior */
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.493); /* Adiciona sombra leve */
+}
+
+/* Estilo para o contêiner da animação */
+.services-animation-container {
+  width: 100%; /* Define a largura máxima */
+  max-width: 20vw; /* Define a largura máxima */
+  margin: 0 auto 50px; /* Define a margem inferior */
+
+}
+
+/* Estilo para o contêiner dos cards */
+.services-card-container {
+  display: flex; /* Define o layout flexível */
+  flex-wrap: wrap; /* Permite que os itens flexíveis ocupem múltiplas linhas */
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  gap: 2rem; /* Espaçamento entre os cards */
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .services-animation-container {
+    max-width: 70%; /* Define a largura máxima para 50% */
+  }
+}

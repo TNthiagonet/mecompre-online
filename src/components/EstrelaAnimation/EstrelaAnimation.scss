@@ -1,0 +1,164 @@
+/* Define o container das animações */
+.circles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Ajustado para ocupar 100% da largura da tela */
+  height: 100vh; /* Ajustado para ocupar 100% da altura da tela */
+  overflow: hidden;
+}
+
+.circles ul {
+  padding: 0;
+  margin: 0;
+}
+
+.circles li {
+  position: absolute;
+  list-style: none;
+  width: 5vw; /* Width relativo à largura da tela */
+  height: 5vh; /* Height relativo à altura da tela */
+  animation: animate 27s linear infinite;
+  bottom: -15vh; /* Ajustado para ser relativo à altura da tela */
+  opacity: 0.4; /* Opacidade inicial */
+  border-radius: 50%; /* Bordas redondas */
+
+  /* Estilos para a imagem ou lottie */
+  .lottie-container,
+  img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    opacity: 0.4;
+    transition: filter 0.3s, opacity 0.3s;
+    user-select: none;
+    pointer-events: none;
+  }
+}
+
+/* Define a animação das bolinhas */
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.4;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(720deg); /* Ajustado para ser relativo à altura da tela */
+    opacity: 0.4;
+    border-radius: 50%;
+  }
+}
+
+/* Estilo de cada bolinha */
+.circles li:nth-child(1) {
+  left: 27%;
+  width: 10%;
+  height: 10%;
+  animation-delay: 0s;
+  animation-duration: 14s;
+}
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 4.8%;
+  height: 4.8%;
+  animation-delay: 1s;
+  animation-duration: 15s;
+}
+.circles li:nth-child(3) {
+  left: 65%;
+  width: 9%;
+  height: 9%;
+  animation-delay: 2s;
+  animation-duration: 16s;
+}
+.circles li:nth-child(4) {
+  left: 42%;
+  width: 3%;
+  height: 3%;
+  animation-delay: 3s;
+  animation-duration: 24s;
+}
+.circles li:nth-child(5) {
+  left: 58%;
+  width: 5.5%;
+  height: 5.5%;
+  animation-delay: 4s;
+  animation-duration: 18s;
+}
+.circles li:nth-child(6) {
+  left: 73%;
+  width: 6%;
+  height: 6%;
+  animation-delay: 5s;
+  animation-duration: 26s;
+}
+.circles li:nth-child(7) {
+  left: 31%;
+  width: 10%;
+  height: 10%;
+  animation-delay: 6s;
+  animation-duration: 20s;
+}
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 6.1%;
+  height: 6.1%;
+  animation-delay: 7s;
+  animation-duration: 28s;
+}
+.circles li:nth-child(9) {
+  left: 18%;
+  width: 3.5%;
+  height: 3.5%;
+  animation-delay: 8s;
+  animation-duration: 24s;
+}
+.circles li:nth-child(10) {
+  left: 78%;
+  width: 13%;
+  height: 13%;
+  animation-delay: 9s;
+  animation-duration: 22s;
+}
+.circles li:nth-child(11) {
+  left: 1%;
+  width: 12%;
+  height: 12%;
+  animation-delay: 10s;
+  animation-duration: 10s;
+}
+.circles li:nth-child(12) {
+  left: 90%;
+  width: 11%;
+  height: 11%;
+  animation-delay: 11s;
+  animation-duration: 12s;
+}
+.circles li:nth-child(13) {
+  left: 23%;
+  width: 10%;
+  height: 10%;
+  animation-delay: 12s;
+  animation-duration: 19s;
+}
+.circles li:nth-child(14) {
+  left: 50%;
+  width: 8%;
+  height: 8%;
+  animation-delay: 13s;
+  animation-duration: 18s;
+}
+.circles li:nth-child(15) {
+  left: 85%;
+  width: 6%;
+  height: 6%;
+  animation-delay: 14s;
+  animation-duration: 15s;
+}
+
+@media (max-width: 768px) {
+  .circles li {
+    display: none; /* Oculta as bolinhas em telas menores */
+  }
+}

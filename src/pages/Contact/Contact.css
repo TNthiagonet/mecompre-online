@@ -1,0 +1,91 @@
+/* Contact.css */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+/* Estilo principal da seção "Contact" */
+#contact {
+  padding: 100px 20px;
+  background-color: #0091ff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Estilo do conteúdo central da seção "Contact" */
+.contact-content {
+  max-width: 500px;
+  background-color: #dff6fd00;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #620076;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-content:hover {
+  box-shadow: 0 0 20px #9500b3;
+}
+
+/* Estilo do cabeçalho da seção "Contact" */
+.contact-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-header h1 {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  color: #f9e1ff;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712);
+}
+
+.contact-header p {
+  font-size: 1rem;
+  color: #f9e1ff;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712);
+  margin-bottom: 1px;
+}
+
+/* Estilo dos ícones de redes sociais e contatos */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.contact-icons .contact-icon {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: #9c929e; /* Cor padrão dos ícones */
+  width: 50px; /* Ajuste o tamanho do ícone conforme necessário */
+  height: 50px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+.contact-icons .contact-icon:hover {
+  transform: scale(1.2);
+  color: #620076; /* Cor dos ícones ao passar o mouse */
+  box-shadow: none; /* Remove o box-shadow no hover */
+}
+
+/* Estilo para as animações de contato */
+.contact-animations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.animation-item {
+  text-align: center;
+}
+
+.animation-item p {
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712);
+}

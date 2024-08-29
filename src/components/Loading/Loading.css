@@ -1,0 +1,29 @@
+/* Loading.css */
+.loader_container {
+  position: fixed; /* Fixar a posição do container na tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, 
+    #210032,
+    #310043,
+    #420054,
+    #520065,
+    #620076,
+    #620076,
+    #520065,
+    #420054,
+    #310043,
+    #210032
+  );
+  z-index: 9999; /* Certifique-se de que está acima de outros elementos */
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+}

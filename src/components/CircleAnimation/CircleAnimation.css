@@ -1,0 +1,60 @@
+.circle-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ajustando largura para cobrir toda a viewport */
+  height: 100%; /* Ajustando altura para cobrir toda a viewport */
+  z-index: 0; /* Colocando CircleBG abaixo do main */
+  overflow: hidden; /* Mantendo overflow hidden para garantir que conteúdo não vaze */
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 1;
+  animation: moveCircle 10s infinite alternate;
+}
+
+@keyframes moveCircle {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: calc(100vw - 200px); /* Usando vw em vez de % para garantir que seja relativo à largura da viewport */
+  }
+  50% {
+    top: calc(100vh - 200px);
+    left: calc(100vw - 200px);
+  }
+  75% {
+    top: calc(100vh - 200px);
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.circle1 {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #4601666e, transparent);
+  animation-duration: 12s;
+}
+
+.circle2 {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #4601666e, transparent);
+  animation-duration: 14s;
+}
+
+.circle3 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #4601666e, transparent);
+  animation-duration: 16s;
+}

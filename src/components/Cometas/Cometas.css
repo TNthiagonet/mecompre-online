@@ -1,0 +1,126 @@
+/* Reset básico para garantir que estilos globais não afetem as estrelas */
+.cometas * {
+  position: fixed;
+}
+
+/* Aplicando variações para cada estrela */
+.cometas .star:nth-child(1) { --star-tail-length: 5em; --top-offset: 10vh; --fall-duration: 6s; --fall-delay: 0s; }
+.cometas .star:nth-child(2) { --star-tail-length: 5.5em; --top-offset: 15vh; --fall-duration: 7s; --fall-delay: 1.2s; }
+.cometas .star:nth-child(3) { --star-tail-length: 6em; --top-offset: 20vh; --fall-duration: 8s; --fall-delay: 2.5s; }
+.cometas .star:nth-child(4) { --star-tail-length: 6.2em; --top-offset: 25vh; --fall-duration: 8.5s; --fall-delay: 0.8s; }
+.cometas .star:nth-child(5) { --star-tail-length: 6.5em; --top-offset: 30vh; --fall-duration: 9s; --fall-delay: 1.7s; }
+.cometas .star:nth-child(6) { --star-tail-length: 6.8em; --top-offset: 35vh; --fall-duration: 9.5s; --fall-delay: 0.3s; }
+.cometas .star:nth-child(7) { --star-tail-length: 7em; --top-offset: 40vh; --fall-duration: 10s; --fall-delay: 1.9s; }
+.cometas .star:nth-child(8) { --star-tail-length: 7.2em; --top-offset: 45vh; --fall-duration: 10.5s; --fall-delay: 0.6s; }
+.cometas .star:nth-child(9) { --star-tail-length: 7.5em; --top-offset: 50vh; --fall-duration: 11s; --fall-delay: 2.3s; }
+.cometas .star:nth-child(10) { --star-tail-length: 7.8em; --top-offset: 55vh; --fall-duration: 11.5s; --fall-delay: 0.9s; }
+.cometas .star:nth-child(11) { --star-tail-length: 8em; --top-offset: 60vh; --fall-duration: 12s; --fall-delay: 1.5s; }
+.cometas .star:nth-child(12) { --star-tail-length: 8.2em; --top-offset: 65vh; --fall-duration: 12.5s; --fall-delay: 0.2s; }
+.cometas .star:nth-child(13) { --star-tail-length: 8.5em; --top-offset: 70vh; --fall-duration: 13s; --fall-delay: 2.7s; }
+.cometas .star:nth-child(14) { --star-tail-length: 8.8em; --top-offset: 75vh; --fall-duration: 13.5s; --fall-delay: 0.4s; }
+.cometas .star:nth-child(15) { --star-tail-length: 9em; --top-offset: 80vh; --fall-duration: 14s; --fall-delay: 1.2s; }
+.cometas .star:nth-child(16) { --star-tail-length: 9.2em; --top-offset: 85vh; --fall-duration: 14.5s; --fall-delay: 0.8s; }
+.cometas .star:nth-child(17) { --star-tail-length: 9.5em; --top-offset: 90vh; --fall-duration: 15s; --fall-delay: 1.3s; }
+.cometas .star:nth-child(18) { --star-tail-length: 9.8em; --top-offset: 95vh; --fall-duration: 15.5s; --fall-delay: 0.5s; }
+.cometas .star:nth-child(19) { --star-tail-length: 10em; --top-offset: 100vh; --fall-duration: 16s; --fall-delay: 2.1s; }
+.cometas .star:nth-child(20) { --star-tail-length: 10.2em; --top-offset: 105vh; --fall-duration: 16.5s; --fall-delay: 0.7s; }
+.cometas .star:nth-child(21) { --star-tail-length: 10.5em; --top-offset: 110vh; --fall-duration: 17s; --fall-delay: 1.8s; }
+.cometas .star:nth-child(22) { --star-tail-length: 10.8em; --top-offset: 115vh; --fall-duration: 17.5s; --fall-delay: 0.9s; }
+.cometas .star:nth-child(23) { --star-tail-length: 11em; --top-offset: 120vh; --fall-duration: 18s; --fall-delay: 2.2s; }
+.cometas .star:nth-child(24) { --star-tail-length: 11.2em; --top-offset: 125vh; --fall-duration: 18.5s; --fall-delay: 0.6s; }
+.cometas .star:nth-child(25) { --star-tail-length: 11.5em; --top-offset: 130vh; --fall-duration: 19s; --fall-delay: 1.5s; }
+.cometas .star:nth-child(26) { --star-tail-length: 11.8em; --top-offset: 135vh; --fall-duration: 19.5s; --fall-delay: 0.4s; }
+.cometas .star:nth-child(27) { --star-tail-length: 12em; --top-offset: 140vh; --fall-duration: 20s; --fall-delay: 2.3s; }
+.cometas .star:nth-child(28) { --star-tail-length: 12.2em; --top-offset: 145vh; --fall-duration: 20.5s; --fall-delay: 0.7s; }
+.cometas .star:nth-child(29) { --star-tail-length: 12.5em; --top-offset: 150vh; --fall-duration: 21s; --fall-delay: 1.2s; }
+.cometas .star:nth-child(30) { --star-tail-length: 12.8em; --top-offset: 155vh; --fall-duration: 21.5s; --fall-delay: 0.5s; }
+.cometas .star:nth-child(31) { --star-tail-length: 13em; --top-offset: 160vh; --fall-duration: 22s; --fall-delay: 1.7s; }
+.cometas .star:nth-child(32) { --star-tail-length: 13.2em; --top-offset: 165vh; --fall-duration: 22.5s; --fall-delay: 0.8s; }
+.cometas .star:nth-child(33) { --star-tail-length: 13.5em; --top-offset: 170vh; --fall-duration: 23s; --fall-delay: 2.2s; }
+.cometas .star:nth-child(34) { --star-tail-length: 13.8em; --top-offset: 175vh; --fall-duration: 23.5s; --fall-delay: 0.6s; }
+.cometas .star:nth-child(35) { --star-tail-length: 14em; --top-offset: 180vh; --fall-duration: 24s; --fall-delay: 1.5s; }
+.cometas .star:nth-child(36) { --star-tail-length: 14.2em; --top-offset: 185vh; --fall-duration: 24.5s; --fall-delay: 0.4s; }
+.cometas .star:nth-child(37) { --star-tail-length: 14.5em; --top-offset: 190vh; --fall-duration: 25s; --fall-delay: 1.8s; }
+.cometas .star:nth-child(38) { --star-tail-length: 14.8em; --top-offset: 195vh; --fall-duration: 25.5s; --fall-delay: 0.7s; }
+.cometas .star:nth-child(39) { --star-tail-length: 15em; --top-offset: 200vh; --fall-duration: 26s; --fall-delay: 2.1s; }
+.cometas .star:nth-child(40) { --star-tail-length: 15.2em; --top-offset: 205vh; --fall-duration: 26.5s; --fall-delay: 0.9s; }
+.cometas .star:nth-child(41) { --star-tail-length: 15.5em; --top-offset: 210vh; --fall-duration: 27s; --fall-delay: 1.2s; }
+.cometas .star:nth-child(42) { --star-tail-length: 15.8em; --top-offset: 215vh; --fall-duration: 27.5s; --fall-delay: 0.5s; }
+.cometas .star:nth-child(43) { --star-tail-length: 16em; --top-offset: 220vh; --fall-duration: 28s; --fall-delay: 1.3s; }
+.cometas .star:nth-child(44) { --star-tail-length: 16.2em; --top-offset: 225vh; --fall-duration: 28.5s; --fall-delay: 0.6s; }
+.cometas .star:nth-child(45) { --star-tail-length: 16.5em; --top-offset: 230vh; --fall-duration: 29s; --fall-delay: 1.5s; }
+.cometas .star:nth-child(46) { --star-tail-length: 16.8em; --top-offset: 235vh; --fall-duration: 29.5s; --fall-delay: 0.4s; }
+.cometas .star:nth-child(47) { --star-tail-length: 17em; --top-offset: 240vh; --fall-duration: 30s; --fall-delay: 1.7s; }
+.cometas .star:nth-child(48) { --star-tail-length: 17.2em; --top-offset: 245vh; --fall-duration: 30.5s; --fall-delay: 0.8s; }
+.cometas .star:nth-child(49) { --star-tail-length: 17.5em; --top-offset: 250vh; --fall-duration: 31s; --fall-delay: 2.2s; }
+.cometas .star:nth-child(50) { --star-tail-length: 17.8em; --top-offset: 255vh; --fall-duration: 31.5s; --fall-delay: 0.7s; }
+
+
+
+/* Contêiner para as estrelas */
+.cometas .stars {
+  position: fixed; /* Define a posição fixa para o contêiner das estrelas */
+  top: 0; /* Coloca o contêiner no topo da janela */
+  left: 0; /* Coloca o contêiner no canto esquerdo da janela */
+  width: 100%; /* Ocupa toda a largura da janela */
+  height: 120%; /* Ocupa 120% da altura da janela, para garantir que todas as estrelas sejam cobertas */
+  transform: rotate(-45deg); /* Rotaciona o contêiner em -45 graus */
+  overflow: hidden; /* Garante que as estrelas dentro do contêiner não saiam */
+  pointer-events: none; /* Impede que as estrelas interfiram com cliques do usuário */
+}
+
+/* Estilo para cada estrela */
+.cometas .star {
+  --star-color: rgba(255, 5, 255, 0.212); /* Define a cor das estrelas como roxo-rosa com 70% de transparência */
+  --star-tail-length: 7em; /* Define o comprimento do rastro da estrela como 6em */
+  --star-tail-height: 3px; /* Define a altura do rastro da estrela como 2px */
+  --fall-duration: 9s; /* Define a duração da animação de queda como 9 segundos */
+  --tail-fade-duration: var(--fall-duration); /* Define a duração da animação de desaparecimento do rastro */
+
+  position: absolute; /* Define a posição absoluta para cada estrela */
+  top: var(--top-offset); /* Define a posição vertical da estrela, variável para ajuste */
+  left: 0; /* Coloca a estrela no lado esquerdo do contêiner */
+  width: var(--star-tail-length); /* Define o comprimento da estrela */
+  height: var(--star-tail-height); /* Define a altura do rastro da estrela */
+  background: linear-gradient(to right, transparent, var(--star-color)); /* Aplica um gradiente linear ao fundo da estrela */
+  border-radius: 50%; /* Define a borda da estrela como circular */
+  filter: drop-shadow(0 0 6px var(--star-color)); /* Aplica uma sombra à estrela */
+  transform: translate3d(104em, 0, 0); /* Translada a estrela horizontalmente em 104em */
+  opacity: 0; /* Inicia a estrela com opacidade 0 */
+  animation: fall var(--fall-duration) var(--fall-delay) linear infinite, 
+             tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite; /* Aplica animações de queda e desaparecimento do rastro */
+}
+
+@keyframes fall {
+  0% {
+    transform: translate3d(-32em, 0, 0); /* Define a posição inicial da estrela fora do contêiner */
+  }
+  1% {
+    opacity: 1; /* Aumenta a opacidade para 1% */
+  }
+  to {
+    transform: translate3d(104em, 0, 0); /* Move a estrela até -30em horizontalmente, ao longo da animação */
+    opacity: 0; /* Finaliza a estrela com opacidade 0 */
+  }
+}
+
+@keyframes tail-fade {
+  0%, 50% {
+    width: var(--star-tail-length); /* Define o comprimento inicial do rastro */
+    opacity: 1; /* Inicia a opacidade do rastro em 1 */
+  }
+  70%, 80% {
+    width: 0; /* Reduz o comprimento do rastro para 0 */
+  }
+  100% {
+    width: 0; /* Finaliza o rastro com comprimento 0 */
+    opacity: 0.4; /* Finaliza o rastro com opacidade 0.4 */
+  }
+}
+
+
+@keyframes blink {
+  50% {
+    opacity: 0.6; /* Define a opacidade da animação de piscar para 0.6 a 50% do tempo */
+  }
+}

@@ -1,0 +1,122 @@
+/* Estilo para o header */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+header {
+  background-image: linear-gradient(
+    to bottom,
+    #210032a2,
+    #310043a2,
+    #420054a2,
+    #520065a2,
+    #620076a2,
+    #620076a2,
+    #520065a2,
+    #420054a2,
+    #310043a2,
+    #210032a2
+  );
+  color: #f9e1ff;
+  padding: 20px 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do header */
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712); /* Adiciona sombra leve */
+}
+
+.header-content {
+  position: relative;
+  z-index: 2; /* Garante que o conteúdo do header esteja acima de outros elementos */
+}
+
+.header-content .top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+  height: 100%; /* Garante que o top-nav ocupe toda a altura do header */
+}
+
+.header-content .top-nav .left,
+.header-content .top-nav .center,
+.header-content .top-nav .right {
+  flex: 1;
+}
+
+.header-content .top-nav .left {
+  display: flex;
+  align-items: center;
+}
+
+.header-content .top-nav .left .logo-image {
+  height: 40px; /* Ajuste conforme necessário */
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.header-content .top-nav .left .logo-text {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px; /* Tamanho da fonte da logo */
+  color: #f9e1ff;
+  text-decoration: none;
+  white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+  overflow: hidden; /* Evita que o texto derrame do container */
+  text-overflow: ellipsis; /* Mostra um ponto de elipse (...) quando o texto estoura */
+}
+
+.header-content .top-nav .center {
+  text-align: center;
+}
+
+.header-content .top-nav .right {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-content .top-nav .right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-right: 15%;
+}
+
+.header-content .top-nav .right ul li {
+  margin-left: 15px;
+}
+
+.header-content .top-nav .right ul li:hover {
+  transform: scale(1.1);
+}
+
+.header-content .top-nav .right ul li a {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f9e1ff;
+  font-size: 20px;
+  text-decoration: none;
+  text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.712); /* Adiciona sombra leve */
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 34px;
+  cursor: pointer;
+  color: #f9e1ff;
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .header-content .top-nav .right ul {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}

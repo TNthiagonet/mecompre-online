@@ -1,0 +1,70 @@
+/* Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+.home-section {
+  display: flex;
+  flex-direction: row; /* Alinha a animação e o texto lado a lado para desktops */
+  justify-content: space-around;
+  align-items: center;
+  padding: 150px 20px;
+  margin-top: -50px;
+}
+
+.home-content {
+  max-width: 600px;
+  text-align: left; /* Mantém o texto alinhado à esquerda para desktops */
+  line-height: 1.6; /* Melhora a legibilidade com espaçamento entre linhas */
+}
+
+.home-title {
+  font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f9e1ff;
+  text-shadow: -2px 2px 2px rgb(0, 0, 0); /* Adiciona sombra leve */
+  line-height: 1.2; /* Ajusta o espaçamento entre linhas do título */
+}
+
+.home-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f9e1ff;
+  text-shadow: -1px 1px 1px rgb(0, 0, 0); /* Adiciona sombra leve */
+}
+
+.animation-container {
+  width: 45vw; /* Ajusta a largura da animação para desktop */
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px; /* Adiciona espaço abaixo da animação */
+}
+
+/* Media query para dispositivos menores */
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column-reverse; /* Coloca a animação acima do texto */
+    padding: 100px 20px; /* Ajusta o padding para dispositivos menores */
+  }
+
+  .home-title {
+    font-size: 2.8rem; /* Ajusta o tamanho da fonte para dispositivos menores */
+    margin-bottom: 15px; /* Ajusta a margem inferior para dispositivos menores */
+  }
+
+  .home-description {
+    font-size: 1.05rem; /* Ajusta o tamanho da fonte para dispositivos menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 2.4rem; /* Ajusta o tamanho da fonte para dispositivos muito pequenos */
+    margin-bottom: 10px; /* Ajusta a margem inferior para dispositivos muito pequenos */
+  }
+
+  .home-description {
+    font-size: 1rem; /* Ajusta o tamanho da fonte para dispositivos muito pequenos */
+  }
+}

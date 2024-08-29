@@ -1,0 +1,49 @@
+/* Arquivo: src/components/Footer/Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+.footer {
+  background-image: linear-gradient(
+    to bottom,
+    #210032a2,
+    #310043a2,
+    #420054a2,
+    #520065a2,
+    #620076a2,
+    #620076a2,
+    #520065a2,
+    #420054a2,
+    #310043a2,
+    #210032a2
+  );
+  color: #9c929e;
+  text-align: center;
+  padding: 10px 2;
+  position: fixed;
+  bottom: -50px;
+  width: 100%;
+  -webkit-transition: bottom 0.3s ease; /* Prefixo para navegadores WebKit como Safari e antigos versões do Chrome */
+  transition: bottom 0.3s ease; /* Transição padrão */
+}
+
+.footer.visible {
+  bottom: 0; /* Mostra o footer quando chegar ao fim da página */
+}
+
+.footer p,
+.footer a {
+  font-family: 'Concert One', cursive; /* Aplica a fonte "Concert One" */
+}
+
+.footer a {
+  text-decoration: none; /* Remove o sublinhado dos links dentro do footer */
+  color: #9c929e; /* Cor padrão do texto */
+  transition: color 0.3s ease; /* Transição suave para a cor do texto */
+}
+
+.footer a.thiagonet {
+  cursor: pointer; /* Adiciona cursor de mão */
+}
+
+.footer a.thiagonet:hover {
+  color: #d5b6db; /* Cor branca para o texto ao passar o mouse */
+}

@@ -1,0 +1,28 @@
+.button-whatsapp-container {
+  position: fixed;
+  bottom: 33px;
+  right: -0px;
+  z-index: 9999;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto; /* Padrão */
+  height: auto; /* Padrão */
+  transform: none; /* Padrão */
+}
+
+.button-whatsapp-animation {
+
+  width: 80%; /* Tamanho padrão em % */
+  height: 80%; /* Tamanho padrão em % */
+  filter: saturate(110%);
+}
+
+.second-animation .button-whatsapp-animation {
+  margin-bottom: 150px;
+  align-items:center;
+  justify-content: center;
+  width: 30%; /* 70% do tamanho original */
+  height: 30%; /* 70% do tamanho original */
+}

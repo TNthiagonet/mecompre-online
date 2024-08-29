@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50" height="50">
+  <!-- Letra T -->
+  <path d="M30 10v80h40v-20h-20v-40h20v-20z" fill="#ffffff" />
+
+  <!-- Letra N -->
+  <path d="M70 90v-80h-10l-30 80v-80h-10v80h10l30-80v80z" fill="#ffffff" />
+</svg>

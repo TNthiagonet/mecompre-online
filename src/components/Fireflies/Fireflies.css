@@ -1,0 +1,59 @@
+/* Arquivo: Fireflies.css */
+
+.fireflies-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Evita que os fireflies interfiram com cliques em elementos abaixo */
+
+}
+
+.firefly {
+  position: absolute;
+  width: 0.4vw;
+  height: 0.4vw;
+  margin: -0.2vw;
+  animation: appear 6s ease-in-out infinite, move 8s linear infinite, flash 1.5s ease infinite;
+  pointer-events: none;
+  background-color: rgba(187, 2, 224, 0.158); /* Inicialmente transparente */
+  border-radius: 50%;
+  transform-origin: center;
+  box-shadow: 0 0 0vw 0vw rgba(152, 11, 218, 0.171); /* Sombra rosa para as fireflies */
+  opacity: 0; /* Inicialmente invisível */
+}
+
+/* Estilos específicos para cada firefly */
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+  50% {
+    transform: translate(calc(-50% + 50vw), calc(-50% + 50vh)) rotate(90deg) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.4);
+  }
+}
+
+@keyframes flash {
+  0%, 100% {
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw rgba(226, 78, 214, 0.226); /* Sombra rosa com 50% de transparência */
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 4vw 0.2vw rgba(163, 31, 180, 0.253); /* Sombra rosa com 50% de transparência */
+  }
+}
