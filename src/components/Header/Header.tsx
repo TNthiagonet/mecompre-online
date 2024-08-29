@@ -6,7 +6,7 @@ import animationMenuOpen from '../../Animations/MenuOpen.json';
 import animationMenuClose from '../../Animations/MenuClose.json';
 import menuOpenSound from '../../Sounds/Click.mp3';
 import logoHoverSound from '../../Sounds/ThiagoNET.mp3'; // Importe o som ItensHover aqui
-import tnLogoAnimation from '../../Animations/tnLogoAnimation.json'; // Importe o arquivo MenuOpen.json para tnLogo
+import tnLogoAnimation from '../../Animations/MeCompreOnlineLogo.json'; // Importe o arquivo MenuOpen.json para tnLogo
 
 type AnimationData = any;
 
@@ -69,10 +69,10 @@ const Header: React.FC = () => {
             {/* Renderiza a animação Lottie ao invés da imagem */}
             <Lottie
               animationData={tnLogoAnimation}
-              style={{ width: '50px', height: '50px' }} // Ajuste o tamanho conforme necessário
+              style={{ width: '90px', height: '90px' }} // Ajuste o tamanho conforme necessário
             />
             <a href="#" className="logo-text" onMouseEnter={playLogoHoverSound}>
-              ThiagoNET
+              Me Compre Online
             </a>
           </div>
           <div className="center">
@@ -96,7 +96,7 @@ const Header: React.FC = () => {
             <div className="hamburger-menu" onClick={toggleMenu}>
               <Lottie
                 animationData={animationData}
-                style={{ width: '40px', height: '40px' }}
+                style={{ width: '30px', height: '30px' }}
                 onComplete={handleAnimationComplete}
               />
             </div>

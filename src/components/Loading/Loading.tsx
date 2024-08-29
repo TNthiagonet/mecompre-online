@@ -1,7 +1,7 @@
 // Loading.tsx
 import React from 'react';
 import Lottie from 'lottie-react';
-import tnLogoAnimation from '../../Animations/tnLogoAnimation.json';
+import tnLogoAnimation from '../../Animations/MeCompreOnlineLogo.json';
 import './Loading.css';
 
 const Loading: React.FC = () => {
